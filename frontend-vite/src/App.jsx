@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
+import './App.css'
 
 function App(){
   const [file, setFile] = useState(null);
@@ -35,6 +36,9 @@ function App(){
       </form>
       <h2>Preview:</h2>
       <pre>{content}</pre>
+      <div className="bg-blue-500 text-white p-4">
+      Tailwind is working!
+      </div>
     </div>
     
   );
